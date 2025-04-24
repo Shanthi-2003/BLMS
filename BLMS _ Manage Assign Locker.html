@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<!-- saved from url=(0086)http://localhost/Bank-locker-Managament-System-PHP/blms/banker/manage-locker-form.php# -->
+<html lang="en" style="height: auto;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BLMS | Manage Assign Locker</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="./BLMS _ Manage Assign Locker_files/css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="./BLMS _ Manage Assign Locker_files/all.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="./BLMS _ Manage Assign Locker_files/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="./BLMS _ Manage Assign Locker_files/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="./BLMS _ Manage Assign Locker_files/buttons.bootstrap4.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="./BLMS _ Manage Assign Locker_files/adminlte.min.css">
+<link type="text/css" rel="stylesheet" href="chrome-extension://fheoggkfdfchfphceeifdbepaooicaho/css/mcafee_fonts.css"></head>
+<body class="sidebar-mini" style="height: auto;">
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="http://localhost/Bank-locker-Managament-System-PHP/blms/banker/manage-locker-form.php#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+     
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      <li class="nav-item">
+        <a class="" data-widget="navbar-pdf" href="http://localhost/Bank-locker-Managament-System-PHP/blms/banker/manage-locker-form.php" role="button">
+          <i class="fas fa-search"></i>
+        </a>
+        <div class="navbar-search-block">
+          <form class="form-inline" action="http://localhost/Bank-locker-Managament-System-PHP/blms/banker/search-report-details.php" method="post">
+            <div class="input-group input-group-sm">
+              <input class="form-control form-control-navbar" type="search" placeholder="Search Assigned Locker by Locker Number / Key Number / Name" aria-label="Search" name="searchinput"> 
+              <div class="input-group-append">
+                <button class="btn btn-navbar" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </li>
+
+   
+
+      <li class="nav-item">
+        <a class="nav-link" data-widget="fullscreen" href="http://localhost/Bank-locker-Managament-System-PHP/blms/banker/manage-locker-form.php#" role="button">
+          <i class="fas fa-expand-arrows-alt"></i>
+        </a>
+      </li>
+
+    </ul>
+  </nav>
+  <!-- /.navbar -->  <!-- /.navbar -->
+
+     
+      <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="http://localhost/Bank-locker-Managament-System-PHP/blms/banker/dashboard.php" class="brand-link">
+
+      <span class="brand-text font-weight-light">BLMS | Banker </span>
+    </a>
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="./BLMS _ Manage Assign Locker_files/manager.png" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="http://localhost/Bank-locker-Managament-System-PHP/blms/banker/manage-locker-form.php#" class="d-block">admin</a>
+        </div>
+      </div>
+
+
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+    <li class="nav-item">
+            <a href="http://localhost/Bank-locker-Managament-System-PHP/blms/banker/dashboard.php" class="nav-link">
+                 <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+             Dashboard
+              </p>
+            </a>
+          </li>
+
+<!--Subadmins--->
+     <li class="nav-item">
+            <a href="http://localhost/Bank-locker-Managament-System-PHP/blms/banker/manage-locker-form.php#" class="nav-link">
+              <i class="nav-icon fas fa-users"></i>
+              <p>
+                Sub-Banker
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview" style="display: none;">
+              <li class="nav-item">
+                <a href="http://localhost/Bank-locker-Managament-System-PHP/blms/banker/add-subadmin.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Add</p>
+                </a>
+              </li>
+          
+           <li class="nav-item">
+                <a href="http://localhost/Bank-locker-Managament-System-PHP/blms/banker/manage-subadmins.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p> Manage</p>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+<!--Practice Areas--->
+<li class="nav-item">
+            <a href="http://localhost/Bank-locker-Managament-System-PHP/blms/banker/manage-locker-form.php#" class="nav-link">
+              <i class="nav-icon fas fa-users"></i>
+              <p>
+                Locker Type
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview" style="display: none;">
+              <li class="nav-item">
+                <a href="http://localhost/Bank-locker-Managament-System-PHP/blms/banker/add-lockertype.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Add</p>
+                </a>
+              </li>
+          
+           <li class="nav-item">
+                <a href="http://localhost/Bank-locker-Managament-System-PHP/blms/banker/manage-lockertype.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p> Manage</p>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+   <li class="nav-item">
+            <a href="http://localhost/Bank-locker-Managament-System-PHP/blms/banker/manage-locker-form.php#" class="nav-link">
+              <i class="nav-icon fas fa-file"></i>
+              <p>
+               Assign Locker
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview" style="display: none;">
+              <li class="nav-item">
+                <a href="http://localhost/Bank-locker-Managament-System-PHP/blms/banker/add-locker-form.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Add</p>
+                </a>
+              </li>
+          
+           <li class="nav-item">
+                <a href="http://localhost/Bank-locker-Managament-System-PHP/blms/banker/manage-locker-form.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p> Manage</p>
+                </a>
+              </li>
+
+             
+            </ul>
+          </li> 
+<!--Reports--->
+   <li class="nav-item">
+            <a href="http://localhost/Bank-locker-Managament-System-PHP/blms/banker/manage-locker-form.php#" class="nav-link">
+              <i class="nav-icon fas fa-table"></i>
+              <p>
+               Reports
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview" style="display: none;">
+              <li class="nav-item">
+                <a href="http://localhost/Bank-locker-Managament-System-PHP/blms/banker/bwdates-report-ds.php" class="nav-link">  
+                  <i class="far fa-calendar-alt nav-icon"></i>
+                  <p>B/w Dates</p>
+                </a>
+              </li>   
+
+              <li class="nav-item">
+                <a href="http://localhost/Bank-locker-Managament-System-PHP/blms/banker/search-report.php" class="nav-link">  
+                  <i class="fas fa-search nav-icon"></i>
+                  <p>Search Report</p>
+                </a>
+              </li>
+            </ul>
+          </li> 
+
+<!--Reports--->
+   <li class="nav-item">
+            <a href="http://localhost/Bank-locker-Managament-System-PHP/blms/banker/manage-locker-form.php#" class="nav-link">
+              <i class="nav-icon fas fa-file"></i>
+              <p>
+               Pages
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview" style="display: none;">
+              <li class="nav-item">
+                <a href="http://localhost/Bank-locker-Managament-System-PHP/blms/banker/aboutus.php" class="nav-link">  
+                  <i class="far fa-file-alt nav-icon"></i>
+                  <p>About us</p>
+                </a>
+              </li>   
+
+              <li class="nav-item">
+                <a href="http://localhost/Bank-locker-Managament-System-PHP/blms/banker/contact-us.php" class="nav-link">  
+                  <i class="fas fa-file nav-icon"></i>
+                  <p>Contact us</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+
+
+<!--Profile--->
+   <li class="nav-item">
+            <a href="http://localhost/Bank-locker-Managament-System-PHP/blms/banker/manage-locker-form.php#" class="nav-link">
+              <i class="nav-icon fas fa-user-cog"></i> 
+              <p>
+               Account Settings
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview" style="display: none;">
+              <li class="nav-item">
+                <a href="http://localhost/Bank-locker-Managament-System-PHP/blms/banker/profile.php" class="nav-link">
+                  <i class="far fa-user nav-icon"></i>
+                  <p>Profile</p>
+                </a>
+              </li>
+
+ <li class="nav-item">
+                <a href="http://localhost/Bank-locker-Managament-System-PHP/blms/banker/change-password.php" class="nav-link">
+                  <i class="fas fa-cog nav-icon"></i>
+                  <p>Change Password</p>
+                </a>
+              </li>
+
+               <li class="nav-item">
+                <a href="http://localhost/Bank-locker-Managament-System-PHP/blms/banker/logout.php" class="nav-link">
+  <i class="fas fa-sign-out-alt nav-icon"></i>
+                  <p>Logout</p>
+                </a>
+              </li>
+
+            </ul>
+          </li> 
+
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper" style="min-height: 697.222px;">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Manage Assign Locker</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="http://localhost/Bank-locker-Managament-System-PHP/blms/banker/dashboard.php">Home</a></li>
+              <li class="breadcrumb-item active">Manage Assign Locker</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+        
+
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Manage Assign Locker</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <div id="example1_wrapper" class="dataTables_wrapper dt-bootstrap4"><div class="row"><div class="col-sm-12 col-md-6"><div class="dt-buttons btn-group flex-wrap">               <button class="btn btn-secondary buttons-copy buttons-html5" tabindex="0" aria-controls="example1" type="button"><span>Copy</span></button> <button class="btn btn-secondary buttons-csv buttons-html5" tabindex="0" aria-controls="example1" type="button"><span>CSV</span></button> <button class="btn btn-secondary buttons-excel buttons-html5" tabindex="0" aria-controls="example1" type="button"><span>Excel</span></button> <button class="btn btn-secondary buttons-pdf buttons-html5" tabindex="0" aria-controls="example1" type="button"><span>PDF</span></button> <button class="btn btn-secondary buttons-print" tabindex="0" aria-controls="example1" type="button"><span>Print</span></button> <div class="btn-group"><button class="btn btn-secondary buttons-collection dropdown-toggle buttons-colvis" tabindex="0" aria-controls="example1" type="button" aria-haspopup="true" aria-expanded="false"><span>Column visibility</span></button></div> </div></div><div class="col-sm-12 col-md-6"><div id="example1_filter" class="dataTables_filter"><label>Search:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="example1"></label></div></div></div><div class="row"><div class="col-sm-12"><table id="example1" class="table table-bordered table-striped dataTable dtr-inline collapsed" role="grid" aria-describedby="example1_info">
+                  <thead>
+                  <tr role="row"><th class="sorting sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="#: activate to sort column descending">#</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Locker Number: activate to sort column ascending">Locker Number</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Key Number: activate to sort column ascending">Key Number</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Holder Name: activate to sort column ascending">Holder Name</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Mobile Number: activate to sort column ascending">Mobile Number</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Email: activate to sort column ascending">Email</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending">Status</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Locker Assign Date: activate to sort column ascending" style="display: none;">Locker Assign Date</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Action: activate to sort column ascending" style="display: none;">Action</th></tr>
+                  </thead>
+                  <tbody>
+
+                  
+         
+                  
+         
+                  
+         
+                  
+         
+                  
+                      
+                  <tr class="odd">
+                    <td class="dtr-control sorting_1" tabindex="0">1</td>
+                    <td>6543214</td>
+                    <td>98765432</td>
+                    <td>Sriram</td>
+                    <td>8123745671</td>
+                    <td>sriram@gmail.com</td>
+                    
+                     <td>Active</td>
+                   <td style="display: none;">2024-11-07 01:11:03</td>
+                   
+                    <th style="display: none;">
+     <a href="http://localhost/Bank-locker-Managament-System-PHP/blms/banker/edit-assign-locker.php?ltid=4"> <i class="fa fa-edit" aria-hidden="true"></i> </a>
+     <a href="http://localhost/Bank-locker-Managament-System-PHP/blms/banker/manage-locker-form.php?action=delete&amp;&amp;ltid=4" style="color:red;" title="Delete this record" onclick="return confirm(&#39;Do you really want to delete this record?&#39;);"><i class="fa fa-trash" aria-hidden="true"></i> </a>
+     </th>
+                  </tr><tr class="even">
+                    <td class="dtr-control sorting_1" tabindex="0">1</td>
+                    <td>1235645</td>
+                    <td>765432</td>
+                    <td>Shankari</td>
+                    <td>9123476589</td>
+                    <td>shankari@gmail.com</td>
+                    
+                     <td>Active</td>
+                   <td style="display: none;">2024-11-07 07:10:21</td>
+                   
+                    <th style="display: none;">
+     <a href="http://localhost/Bank-locker-Managament-System-PHP/blms/banker/edit-assign-locker.php?ltid=6"> <i class="fa fa-edit" aria-hidden="true"></i> </a>
+     <a href="http://localhost/Bank-locker-Managament-System-PHP/blms/banker/manage-locker-form.php?action=delete&amp;&amp;ltid=6" style="color:red;" title="Delete this record" onclick="return confirm(&#39;Do you really want to delete this record?&#39;);"><i class="fa fa-trash" aria-hidden="true"></i> </a>
+     </th>
+                  </tr><tr class="odd">
+                    <td class="dtr-control sorting_1" tabindex="0">1</td>
+                    <td>1234567</td>
+                    <td>7654321</td>
+                    <td>Rajeswari</td>
+                    <td>8765167543</td>
+                    <td>rajeswari@gmail.com</td>
+                    
+                     <td>Active</td>
+                   <td style="display: none;">2024-11-13 12:45:53</td>
+                   
+                    <th style="display: none;">
+     <a href="http://localhost/Bank-locker-Managament-System-PHP/blms/banker/edit-assign-locker.php?ltid=7"> <i class="fa fa-edit" aria-hidden="true"></i> </a>
+     <a href="http://localhost/Bank-locker-Managament-System-PHP/blms/banker/manage-locker-form.php?action=delete&amp;&amp;ltid=7" style="color:red;" title="Delete this record" onclick="return confirm(&#39;Do you really want to delete this record?&#39;);"><i class="fa fa-trash" aria-hidden="true"></i> </a>
+     </th>
+                  </tr><tr class="even">
+                    <td class="dtr-control sorting_1" tabindex="0">1</td>
+                    <td>1276454</td>
+                    <td>6547321</td>
+                    <td>Ramu</td>
+                    <td>9047385643</td>
+                    <td>ramu@gmail.com</td>
+                    
+                     <td>Active</td>
+                   <td style="display: none;">2024-11-21 21:27:35</td>
+                   
+                    <th style="display: none;">
+     <a href="http://localhost/Bank-locker-Managament-System-PHP/blms/banker/edit-assign-locker.php?ltid=8"> <i class="fa fa-edit" aria-hidden="true"></i> </a>
+     <a href="http://localhost/Bank-locker-Managament-System-PHP/blms/banker/manage-locker-form.php?action=delete&amp;&amp;ltid=8" style="color:red;" title="Delete this record" onclick="return confirm(&#39;Do you really want to delete this record?&#39;);"><i class="fa fa-trash" aria-hidden="true"></i> </a>
+     </th>
+                  </tr><tr class="odd">
+                    <td class="dtr-control sorting_1" tabindex="0">1</td>
+                    <td>1276455</td>
+                    <td>65473212</td>
+                    <td>santhi</td>
+                    <td>8766754321</td>
+                    <td>santhi@gmail.com</td>
+                    
+                     <td>Active</td>
+                   <td style="display: none;">2025-02-13 12:49:45</td>
+                   
+                    <th style="display: none;">
+     <a href="http://localhost/Bank-locker-Managament-System-PHP/blms/banker/edit-assign-locker.php?ltid=10"> <i class="fa fa-edit" aria-hidden="true"></i> </a>
+     <a href="http://localhost/Bank-locker-Managament-System-PHP/blms/banker/manage-locker-form.php?action=delete&amp;&amp;ltid=10" style="color:red;" title="Delete this record" onclick="return confirm(&#39;Do you really want to delete this record?&#39;);"><i class="fa fa-trash" aria-hidden="true"></i> </a>
+     </th>
+                  </tr></tbody>
+                  <tfoot>
+                 <tr><th rowspan="1" colspan="1">#</th><th rowspan="1" colspan="1">Locker Number</th><th rowspan="1" colspan="1">Key Number</th><th rowspan="1" colspan="1">Holder Name</th><th rowspan="1" colspan="1">Mobile Number</th><th rowspan="1" colspan="1">Email</th><th rowspan="1" colspan="1">Status</th><th rowspan="1" colspan="1" style="display: none;">Locker Assign Date</th><th rowspan="1" colspan="1" style="display: none;">Action</th></tr>
+                  </tfoot>
+                </table></div></div><div class="row"><div class="col-sm-12 col-md-5"><div class="dataTables_info" id="example1_info" role="status" aria-live="polite">Showing 1 to 5 of 5 entries</div></div><div class="col-sm-12 col-md-7"><div class="dataTables_paginate paging_simple_numbers" id="example1_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="example1_previous"><a href="http://localhost/Bank-locker-Managament-System-PHP/blms/banker/manage-locker-form.php#" aria-controls="example1" data-dt-idx="0" tabindex="0" class="page-link">Previous</a></li><li class="paginate_button page-item active"><a href="http://localhost/Bank-locker-Managament-System-PHP/blms/banker/manage-locker-form.php#" aria-controls="example1" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item next disabled" id="example1_next"><a href="http://localhost/Bank-locker-Managament-System-PHP/blms/banker/manage-locker-form.php#" aria-controls="example1" data-dt-idx="2" tabindex="0" class="page-link">Next</a></li></ul></div></div></div></div>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
+    </div></section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <strong><a href="http://localhost/Bank-locker-Managament-System-PHP/blms/banker/manage-locker-form.php#">Bank Locker Management System</a>.</strong>
+
+  </footer>
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  <div class="p-3 control-sidebar-content"><h5>Customize AdminLTE</h5><hr class="mb-2"><div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>Dark Mode</span></div><h6>Header Options</h6><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Fixed</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Dropdown Legacy Offset</span></div><div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>No border</span></div><h6>Sidebar Options</h6><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Collapsed</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Fixed</span></div><div class="mb-1"><input type="checkbox" value="1" checked="checked" class="mr-1"><span>Sidebar Mini</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Sidebar Mini MD</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Sidebar Mini XS</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Flat Style</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Legacy Style</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Compact</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Child Indent</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Nav Child Hide on Collapse</span></div><div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>Disable Hover/Focus Auto-Expand</span></div><h6>Footer Options</h6><div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>Fixed</span></div><h6>Small Text Options</h6><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Body</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Navbar</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Brand</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Sidebar Nav</span></div><div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>Footer</span></div><h6>Navbar Variants</h6><div class="d-flex"><select class="custom-select mb-3 text-light border-0 bg-white"><option class="bg-primary">Primary</option><option class="bg-secondary">Secondary</option><option class="bg-info">Info</option><option class="bg-success">Success</option><option class="bg-danger">Danger</option><option class="bg-indigo">Indigo</option><option class="bg-purple">Purple</option><option class="bg-pink">Pink</option><option class="bg-navy">Navy</option><option class="bg-lightblue">Lightblue</option><option class="bg-teal">Teal</option><option class="bg-cyan">Cyan</option><option class="bg-dark">Dark</option><option class="bg-gray-dark">Gray dark</option><option class="bg-gray">Gray</option><option class="bg-light">Light</option><option class="bg-warning">Warning</option><option class="bg-white">White</option><option class="bg-orange">Orange</option></select></div><h6>Accent Color Variants</h6><div class="d-flex"></div><select class="custom-select mb-3 border-0"><option>None Selected</option><option class="bg-primary">Primary</option><option class="bg-warning">Warning</option><option class="bg-info">Info</option><option class="bg-danger">Danger</option><option class="bg-success">Success</option><option class="bg-indigo">Indigo</option><option class="bg-lightblue">Lightblue</option><option class="bg-navy">Navy</option><option class="bg-purple">Purple</option><option class="bg-fuchsia">Fuchsia</option><option class="bg-pink">Pink</option><option class="bg-maroon">Maroon</option><option class="bg-orange">Orange</option><option class="bg-lime">Lime</option><option class="bg-teal">Teal</option><option class="bg-olive">Olive</option></select><h6>Dark Sidebar Variants</h6><div class="d-flex"></div><select class="custom-select mb-3 text-light border-0 bg-primary"><option>None Selected</option><option class="bg-primary">Primary</option><option class="bg-warning">Warning</option><option class="bg-info">Info</option><option class="bg-danger">Danger</option><option class="bg-success">Success</option><option class="bg-indigo">Indigo</option><option class="bg-lightblue">Lightblue</option><option class="bg-navy">Navy</option><option class="bg-purple">Purple</option><option class="bg-fuchsia">Fuchsia</option><option class="bg-pink">Pink</option><option class="bg-maroon">Maroon</option><option class="bg-orange">Orange</option><option class="bg-lime">Lime</option><option class="bg-teal">Teal</option><option class="bg-olive">Olive</option></select><h6>Light Sidebar Variants</h6><div class="d-flex"></div><select class="custom-select mb-3 border-0"><option>None Selected</option><option class="bg-primary">Primary</option><option class="bg-warning">Warning</option><option class="bg-info">Info</option><option class="bg-danger">Danger</option><option class="bg-success">Success</option><option class="bg-indigo">Indigo</option><option class="bg-lightblue">Lightblue</option><option class="bg-navy">Navy</option><option class="bg-purple">Purple</option><option class="bg-fuchsia">Fuchsia</option><option class="bg-pink">Pink</option><option class="bg-maroon">Maroon</option><option class="bg-orange">Orange</option><option class="bg-lime">Lime</option><option class="bg-teal">Teal</option><option class="bg-olive">Olive</option></select><h6>Brand Logo Variants</h6><div class="d-flex"></div><select class="custom-select mb-3 border-0"><option>None Selected</option><option class="bg-primary">Primary</option><option class="bg-secondary">Secondary</option><option class="bg-info">Info</option><option class="bg-success">Success</option><option class="bg-danger">Danger</option><option class="bg-indigo">Indigo</option><option class="bg-purple">Purple</option><option class="bg-pink">Pink</option><option class="bg-navy">Navy</option><option class="bg-lightblue">Lightblue</option><option class="bg-teal">Teal</option><option class="bg-cyan">Cyan</option><option class="bg-dark">Dark</option><option class="bg-gray-dark">Gray dark</option><option class="bg-gray">Gray</option><option class="bg-light">Light</option><option class="bg-warning">Warning</option><option class="bg-white">White</option><option class="bg-orange">Orange</option><a href="http://localhost/Bank-locker-Managament-System-PHP/blms/banker/manage-locker-form.php#">clear</a></select></div></aside>
+  <!-- /.control-sidebar -->
+<div id="sidebar-overlay"></div></div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="./BLMS _ Manage Assign Locker_files/jquery.min.js.download"></script>
+<!-- Bootstrap 4 -->
+<script src="./BLMS _ Manage Assign Locker_files/bootstrap.bundle.min.js.download"></script>
+<!-- DataTables  & Plugins -->
+<script src="./BLMS _ Manage Assign Locker_files/jquery.dataTables.min.js.download"></script>
+<script src="./BLMS _ Manage Assign Locker_files/dataTables.bootstrap4.min.js.download"></script>
+<script src="./BLMS _ Manage Assign Locker_files/dataTables.responsive.min.js.download"></script>
+<script src="./BLMS _ Manage Assign Locker_files/responsive.bootstrap4.min.js.download"></script>
+<script src="./BLMS _ Manage Assign Locker_files/dataTables.buttons.min.js.download"></script>
+<script src="./BLMS _ Manage Assign Locker_files/buttons.bootstrap4.min.js.download"></script>
+<script src="./BLMS _ Manage Assign Locker_files/jszip.min.js.download"></script>
+<script src="./BLMS _ Manage Assign Locker_files/pdfmake.min.js.download"></script>
+<script src="./BLMS _ Manage Assign Locker_files/vfs_fonts.js.download"></script>
+<script src="./BLMS _ Manage Assign Locker_files/buttons.html5.min.js.download"></script>
+<script src="./BLMS _ Manage Assign Locker_files/buttons.print.min.js.download"></script>
+<script src="./BLMS _ Manage Assign Locker_files/buttons.colVis.min.js.download"></script>
+<!-- AdminLTE App -->
+<script src="./BLMS _ Manage Assign Locker_files/adminlte.min.js.download"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="./BLMS _ Manage Assign Locker_files/demo.js.download"></script>
+<!-- Page specific script -->
+<script>
+  $(function () {
+    $("#example1").DataTable({
+      "responsive": true, "lengthChange": false, "autoWidth": false,
+      "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+    }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+  });
+</script>
+
+
+<span id="PING_CONTENT_DLS_POPUP" style="display: none;"></span><div style="background-color: transparent; border: none; bottom: 15px; display: block; margin: 0px; opacity: 1; padding: 0px; position: fixed; right: 15px; z-index: 2147483647;"><template shadowrootmode="closed"><style>/*!
+ * 
+ *     MCAFEE RESTRICTED CONFIDENTIAL
+ *     Copyright (c) 2025 McAfee, LLC
+ *
+ *     The source code contained or described herein and all documents related
+ *     to the source code ("Material") are owned by McAfee or its
+ *     suppliers or licensors. Title to the Material remains with McAfee
+ *     or its suppliers and licensors. The Material contains trade
+ *     secrets and proprietary and confidential information of McAfee or its
+ *     suppliers and licensors. The Material is protected by worldwide copyright
+ *     and trade secret laws and treaty provisions. No part of the Material may
+ *     be used, copied, reproduced, modified, published, uploaded, posted,
+ *     transmitted, distributed, or disclosed in any way without McAfee's prior
+ *     express written permission.
+ *
+ *     No license under any patent, copyright, trade secret or other intellectual
+ *     property right is granted to or conferred upon you by disclosure or
+ *     delivery of the Materials, either expressly, by implication, inducement,
+ *     estoppel or otherwise. Any license under such intellectual property rights
+ *     must be expressed and approved by McAfee in writing.
+ *
+ */
+@font-face{font-family:"McAfeePoppins";src:url("../../../fonts/Poppins-Thin.ttf") format("truetype");font-weight:100;font-style:normal}@font-face{font-family:"McAfeePoppins";src:url("../../../fonts/Poppins-ThinItalic.ttf") format("truetype");font-weight:100;font-style:italic}@font-face{font-family:"McAfeePoppins";src:url("../../../fonts/Poppins-ExtraLight.ttf") format("truetype");font-weight:200;font-style:normal}@font-face{font-family:"McAfeePoppins";src:url("../../../fonts/Poppins-ExtraLightItalic.ttf") format("truetype");font-weight:200;font-style:italic}@font-face{font-family:"McAfeePoppins";src:url("../../../fonts/Poppins-Light.ttf") format("truetype");font-weight:300;font-style:normal}@font-face{font-family:"McAfeePoppins";src:url("../../../fonts/Poppins-LightItalic.ttf") format("truetype");font-weight:300;font-style:italic}@font-face{font-family:"McAfeePoppins";src:url("../../../fonts/Poppins-Regular.ttf") format("truetype");font-weight:400;font-style:normal}@font-face{font-family:"McAfeePoppins";src:url("../../../fonts/Poppins-Italic.ttf") format("truetype");font-weight:400;font-style:italic}@font-face{font-family:"McAfeePoppins";src:url("../../../fonts/Poppins-Medium.ttf") format("truetype");font-weight:500;font-style:normal}@font-face{font-family:"McAfeePoppins";src:url("../../../fonts/Poppins-MediumItalic.ttf") format("truetype");font-weight:500;font-style:italic}@font-face{font-family:"McAfeePoppins";src:url("../../../fonts/Poppins-SemiBold.ttf") format("truetype");font-weight:600;font-style:normal}@font-face{font-family:"McAfeePoppins";src:url("../../../fonts/Poppins-SemiBoldItalic.ttf") format("truetype");font-weight:600;font-style:italic}@font-face{font-family:"McAfeePoppins";src:url("../../../fonts/Poppins-Bold.ttf") format("truetype");font-weight:700;font-style:normal}@font-face{font-family:"McAfeePoppins";src:url("../../../fonts/Poppins-BoldItalic.ttf") format("truetype");font-weight:700;font-style:italic}@font-face{font-family:"McAfeePoppins";src:url("../../../fonts/Poppins-ExtraBold.ttf") format("truetype");font-weight:800;font-style:normal}@font-face{font-family:"McAfeePoppins";src:url("../../../fonts/Poppins-ExtraBoldItalic.ttf") format("truetype");font-weight:800;font-style:italic}@font-face{font-family:"McAfeePoppins";src:url("../../../fonts/Poppins-Black.ttf") format("truetype");font-weight:900;font-style:normal}@font-face{font-family:"McAfeePoppins";src:url("../../../fonts/Poppins-BlackItalic.ttf") format("truetype");font-weight:900;font-style:italic}*{border:0;box-sizing:border-box;font:inherit;font-family:"McAfeePoppins",Helvetica,Arial;font-size:100%;margin:0;padding:0;vertical-align:baseline;outline:none}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}html,body{background-color:#f5f6fa;font-family:"McAfeePoppins",Helvetica,Arial;line-height:1;height:100%;width:100%}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}table{border-collapse:collapse;border-spacing:0}b{font-weight:bold}img{display:block}.dls__container{align-items:center;display:flex;margin:0 auto;margin-top:50px;position:relative}.dls__popup__expanded{align-items:center;overflow:hidden;border-radius:100px;cursor:pointer;display:flex;left:0;padding:15px;position:absolute;height:95px;width:383px;background-color:#fff;transition:all .3s ease-in-out}.dls__popup__expanded .dls__icon{height:65px;width:73px}.content{margin-left:12px}.content .content__images{display:flex;align-items:center;width:250px}.content .content__images .seperator__line{margin-left:5px;margin-right:10px}.content .content__images #dls_close_icon{cursor:pointer;margin-left:auto;margin-right:0px}.content p{font-family:"McAfeePoppins",Helvetica,Arial;font-weight:"400";font-size:14px;line-height:20px;margin-top:8px;color:#4258ff;width:250px;cursor:pointer}.shield{overflow:hidden;box-shadow:0px 2px 4px 0px rgba(33,41,52,.12),0px -1px 2px 0px rgba(0,0,0,.08);align-items:center;border-radius:100px;bottom:0;display:flex;height:95px;justify-content:center;position:absolute;right:0;width:383px;transition:all .3s ease-in-out}.shield__circle{display:flex;justify-content:center;align-items:center;width:55px;height:55px;background-color:#c01818;transition:all .6s ease-in-out .2s;z-index:1;opacity:0}
+
+/*# sourceMappingURL=../sourceMap/chrome/css/download_scan_popup.css.map*/</style><div class="dls__container">
+  <div class="shield" style="background: transparent; opacity: 0.1; display: none;">
+    <div class="shield__circle" style="opacity: 1;">
+      <img src="chrome-extension://fheoggkfdfchfphceeifdbepaooicaho/images/download_scan/mcafee_logo_white.svg?secret=jr5rzx" x-mcsrc="" id="dls_ballon_icon" x-mcsrcparsed="true">
+    </div>
+    <div class="dls__popup__expanded" style="opacity: 0;">
+      <img src="chrome-extension://fheoggkfdfchfphceeifdbepaooicaho/images/download_scan/download_scan_icon.svg?secret=jr5rzx" x-mcsrc="" class="dls__icon" x-mcsrcparsed="true">
+      <div class="content">
+        <div class="content__images">
+          <img src="chrome-extension://fheoggkfdfchfphceeifdbepaooicaho/images/download_scan/mcafee_logo_red.svg?secret=jr5rzx" x-mcsrc="" id="dls_mcafee_logo" x-mcsrcparsed="true">
+          <img src="chrome-extension://fheoggkfdfchfphceeifdbepaooicaho/images/download_scan/seperator_line.svg?secret=jr5rzx" x-mcsrc="" class="seperator__line" x-mcsrcparsed="true">
+          <img src="chrome-extension://fheoggkfdfchfphceeifdbepaooicaho/images/download_scan/webadvisor.svg?secret=jr5rzx" x-mcsrc="" x-mcsrcparsed="true">
+          <img src="chrome-extension://fheoggkfdfchfphceeifdbepaooicaho/images/download_scan/close-outline.svg?secret=jr5rzx" x-mcsrc="" id="dls_close_icon" x-mcsrcparsed="true">
+        </div>
+        <p id="download_scan_popup_expanded_descriptions">Your download's being scanned. We'll let you know if there's an issue.</p>
+      </div>
+    </div>
+  </div>
+</div><style>/*!
+ * 
+ *     MCAFEE RESTRICTED CONFIDENTIAL
+ *     Copyright (c) 2025 McAfee, LLC
+ *
+ *     The source code contained or described herein and all documents related
+ *     to the source code ("Material") are owned by McAfee or its
+ *     suppliers or licensors. Title to the Material remains with McAfee
+ *     or its suppliers and licensors. The Material contains trade
+ *     secrets and proprietary and confidential information of McAfee or its
+ *     suppliers and licensors. The Material is protected by worldwide copyright
+ *     and trade secret laws and treaty provisions. No part of the Material may
+ *     be used, copied, reproduced, modified, published, uploaded, posted,
+ *     transmitted, distributed, or disclosed in any way without McAfee's prior
+ *     express written permission.
+ *
+ *     No license under any patent, copyright, trade secret or other intellectual
+ *     property right is granted to or conferred upon you by disclosure or
+ *     delivery of the Materials, either expressly, by implication, inducement,
+ *     estoppel or otherwise. Any license under such intellectual property rights
+ *     must be expressed and approved by McAfee in writing.
+ *
+ */
+.mc-interactive-balloon{position:absolute;right:-50px;bottom:8px;box-shadow:rgba(0,0,0,.12) 0px 0px 10px;height:40px;width:40px;background:#1671ee;border-radius:20px;display:flex;justify-content:center;align-items:center}
+
+/*# sourceMappingURL=../sourceMap/chrome/css/interactive_balloon.css.map*/</style></template></div></body></html>
